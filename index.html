@@ -3,45 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Predictions</title>
+    <title>FutureScore Predictions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <header>
-        <div class="logo">Football Predictions</div>
+        <div class="logo">FutureScore Predictions</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Predictions</a></li>
-                <li><a href="#">Stats</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Predictions</a></li>
+                <li><a href="#" class="nav-link">Stats</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+                <li><a href="#" class="nav-link">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    
     <section class="hero">
-        <h1>Accurate Football Predictions at Your Fingertips</h1>
-        <button>Get Predictions Now</button>
+        <div class="hero-content">
+            <h1>Accurate Football Predictions at Your Fingertips</h1>
+            <p>Stay ahead of the game with expert predictions and insights.</p>
+            <button id="getPredictionsBtn">Get Predictions Now</button>
+        </div>
     </section>
     
     <section class="featured-predictions">
         <h2>Featured Predictions</h2>
-        <!-- Match Cards here -->
+        <div class="match-card">
+            <h3>Team A vs Team B</h3>
+            <p>Date: 2024-12-01</p>
+            <p>Prediction: Team A to win</p>
+        </div>
+        <div class="match-card">
+            <h3>Team C vs Team D</h3>
+            <p>Date: 2024-12-02</p>
+            <p>Prediction: Draw</p>
+        </div>
+        <button id="viewMoreBtn">View More Predictions</button>
     </section>
     
     <section class="stats-insights">
         <h2>Statistics and Insights</h2>
-        <!-- Charts and graphs here -->
+        <div class="chart-container">
+            <div class="chart">Chart 1</div>
+            <div class="chart">Chart 2</div>
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
     </section>
-    
     <section class="blog-news">
         <h2>Latest News</h2>
-        <!-- Blog articles here -->
+        <div class="blog-post">
+            <h3>How to Predict Football Matches</h3>
+            <p>Learn the best strategies for predicting football match outcomes...</p>
+            <div class="more-content" id="moreContent1">
+                <p>This is the additional content that will be shown when the button is clicked.</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleContent('moreContent1')">Read More</button>
+        </div>
+        <div class="blog-post">
+            <h3>Top Performers of the Season</h3>
+            <p>Check out the top football players this season and their stats...</p>
+            <div class="more-content" id="moreContent2">
+                <p>This is the additional content that will be shown when the button is clicked.</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleContent('moreContent2')">Read More</button>
+        </div>
     </section>
-    
     <footer>
-        <p>&copy; 2024 Football Predictions. All Rights Reserved.</p>
+        <p>&copy; 2024 Football Predictions. All Rights Reserved.</p><br>
+        &copy; Developer: @sethchenge
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <button class="mailto-btn" onclick="location.href='mailto:chengeseth25@gmail.com?subject=Football Predictions Inquiry'">Email Us</button>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

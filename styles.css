@@ -29,30 +29,133 @@ nav ul li {
   display: inline;
 }
 
-nav ul li a {
+.nav-link {
   color: white;
   text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+  color: #ffcc00;
+  border-radius: 5px;
 }
 
 .hero {
   background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 600px;
 }
 
 .hero h1 {
   font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 .hero button {
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
-section {
+.hero button:hover {
+  background-color: #0056b3;
+}
+
+.featured-predictions {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.match-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   padding: 20px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.featured-predictions button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.featured-predictions button:hover {
+  background-color: #0056b3;
+}
+
+.stats-insights {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chart-canvas {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.blog-news {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.blog-post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.blog-news button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.blog-news button:hover {
+  background-color: #0056b3;
 }
 
 footer {
@@ -60,4 +163,65 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+.stats-insights {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chart-canvas {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.more-content {
+  display: none;  /* Hide by default */
+  margin-top: 10px;
+}
+
+.read-more-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.mailto-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mailto-btn:hover {
+  background-color: #0056b3;
+  color: #ffcc00;
 }
